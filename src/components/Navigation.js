@@ -26,9 +26,10 @@ const Navigation = () => {
           <li
             className="nav-list-item"
             onClick={() => {
-              document.cookie = cookie.serialize("loggedIn", null, {
+              document.cookie = cookie.serialize("isLoggedIn", null, {
                 maxAge: 0,
               });
+          
               navigate("/login");
             }}
           >
